@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@300&family=Satisfy&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styleSearch.css">
+</head>
+<body>
+  <div class="container-fluid p-0 m-0">
+    <header>
+      <div class="row m-0 p-0">
+        <div class="col-md-3 col-3">
+          <div class="row m-0 p-0">
+            <div class="col-md-3 col-3 text-end d-flex justify-content-end">
+              <div class="line"></div>
+            </div>
+            <div class="col-md-9 col-9 text-start pt-3">
+              <p class="text-light">info@travel.com</p>
+              <p class="text-light">call. +44 3245321</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-6 text-center ">
+          <h1 class="fw-bolder pt-4 chill"><span class="c">C</span>hilling</h1>
+        </div>
+        <div class="col-md-3 col-3 pt-3">
+          <div class="row">
+            <div class="col-md-6 col-6">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                  aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+                    class="fas fa-search"></i></button>
+              </div>
+            </div>
+            <div class="col-md-1 col-1 text-center pt-2 gx-1">
+              <i class="fas fa-shopping-basket"></i>
+            </div>
+            <div class="col-md-1 col-1 text-center pt-2 gx-1">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="col-md-1 col-1 text-end pt-2">
+              <i class="fas fa-bars"></i>
+            </div>
+            <div class="col-md-3 col-3 text-start pt-2">
+              <p class="fw-bolder text-light">MENU</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row m-0 p-0 pt-5 pb-5">
+        <div class="col-md-12 pt-5 pb-5">
+          <p class="text-center fw-bolder pHeader">Home / <span class="spanHeader">Tour</span></p>
+          <h2 class="text-center fw-bolder h2Header">SEARCH RESULTS </h2>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="row m-0 p-0">
+          <!-- ! EMPIEZA AQUI -->
+          <div class="col-md-3 col-xl-3 col-12 text-center">
+            <h2 class="text-start">Search for tours</h2>
+            <input class="mt-2 inputer" type="text" name="country" id="country"
+              placeholder=" 📍 City or Country Zip Code">
+            <div class="row m-0 p-0 mt-3 text-start">
+              <div class="col-6 p-0">
+                <h5 class="text-start lora">From</h5>
+                <input class="dater" type="date" name="date" id="date1">
+              </div>
+              <div class="col-6 p-0">
+                <h5 class="text-start lora">To</h5>
+                <input class="dater" type="date" name="date" id="date2">
+              </div>
+            </div>
+            <h5 class="text-start mt-5 lora">Guests</h5>
+            <div class="row m-0 p-0 mt-3">
+              <div class="col-1 p-0 text-start">1</div>
+              <div class="col-1 p-0 text-start activo">2</div>
+              <div class="col-1 p-0 text-start">3</div>
+              <div class="col-1 p-0 text-start">4+</div>
+            </div>
+            <h5 class="text-start mt-5 lora">By rating</h5>
+            <div class="row m-0 p-0 mt-3">
+              <div class="col-7 p-0 text-start">
+                <input class="checker" type="checkbox" name="rating" id="rating5">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="col-5 p-0 text-start">
+                <input class="checker" type="checkbox" name="rating" id="rating4">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="row m-0 p-0 text-start mt-3">
+              <div class="col-7 p-0 text-start">
+                <input class="checker" type="checkbox" name="rating" id="rating3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="col-5 p-0 text-start">
+                <input class="checker" type="checkbox" name="rating" id="rating2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <h5 class="text-start mt-5 lora">Price</h5>
+            <input type="range" class="form-range" min="100" max="700" id="customRange3">
+            <h5 class="text-start mt-5 lora">Property Type</h5>
+            <div class="row m-0 p-0 text-start mt-3">
+              <div class="col-1 p-0 text-start">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              </div>
+              <div class="col-5 p-0 text-start">
+                <p>Sea</p>
+              </div>
+              <div class="col-1 p-0 text-start">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              </div>
+              <div class="col-5 p-0 text-start">
+                <p>Forest</p>
+              </div>
+            </div>
+            <div class="row m-0 p-0 text-start">
+              <div class="col-1 p-0 text-start">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              </div>
+              <div class="col-5 p-0 text-start">
+                <p>Beach</p>
+              </div>
+              <div class="col-1 p-0 text-start">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              </div>
+              <div class="col-5 p-0 text-start">
+                <p>Hunting</p>
+              </div>
+            </div>
+            <div class="row m-0 p-0 text-start">
+              <div class="col-1 p-0 text-start">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              </div>
+              <div class="col-5 p-0 text-start">
+                <p>Mountain</p>
+              </div>
+              <div class="col-1 p-0 text-start">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              </div>
+              <div class="col-5 p-0 text-start">
+                <p>Charming</p>
+              </div>
+            </div>
+            <div class="row m-0 p-0 text-start">
+              <div class="col-1 p-0 text-start">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              </div>
+              <div class="col-5 p-0 text-start">
+                <p>Resort</p>
+              </div>
+            </div>
+            <div class="row m-0 p-0 text-start mt-4">
+              <div class="col-12 p-0 text-start">
+                <button id="searcher" class="btn btn-primary" type="submit">Search</button>
+              </div>
+            </div>
+          </div>
+          <!-- ! EMPIEZA AQUI -->
+          <div class="col-md-9 col-xl-9 col-12">
+            <div class="row m-0 p-0 mt-1">
+              <div class="col-md-8 col-xl-0 col-12">
+                <div class="row m-0 p-0">
+                  <div class="col-2 text-center">
+                    <h6 class="fw-bolder mt-2" style="font-size: 16px;">Filters by:</h6>
+                  </div>
+                  <div class="col-2">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Destination
+                    </button>
+                  </div>
+                  <div class="col-3 text-center">
+                    <button class="btn btn-primary " type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Sort Order
+                    </button>
+                  </div>
+                  <div class="col-1 text-start mt-2">
+                    <i class="fas fa-arrow-down"></i>
+                  </div>
+                  <div class="col-1 text-start lora">
+                    <button class="btn btn-primary " type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Rate
+                    </button>
+                  </div>
+                  <div class="col-2 text-end lora">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Price
+                    </button>
+                  </div>
+                  <div class="col-1 text-center mt-2">
+                    <i class="fas fa-arrow-down"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-xl-4 col-12">
+                <div class="row m-0-p-0">
+                  <div class="col-2 text-center">
+                    <h5>Display:</h5>
+                  </div>
+                  <div class="col-3 text-end">
+                    <svg style="margin-left: 3.3rem;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+                      <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
+                    </svg>
+                  </div>
+                  <div class="col-1 text-start" style="margin-top: 1px;">
+                    <i class="fa-solid fa-list"></i>
+                  </div>
+                  <div class="col-1 text-start" style="margin-top: 1px;">
+                    <i class="fa-solid fa-border-all"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row m-0 p-0 mt-5">
+              <div class="col-12">
+                <div class="row m-0 p-0">
+                  <div class="col-md-4 col-xl-4 col-12">
+                    <img src="./images/beach.jpg" alt="playita" class="img-fluid h-100">
+                  </div>
+                  <div class="col-md-4 col-xl-4 col-12">
+                    <h5 class="mal">New York</h5>
+                    <h3>Manhattan</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"><span class="review">(20 reviews)</span></i>
+                    <p class="mt-2 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="gr">Latest booking: Nov 3, 2017</p>
+                  </div>
+                  <div class="col-md-4 col-xl-4 col-12">
+                    <h5 class="time">from</h5>
+                    <h2 class="sat">$230<span class="time">/1 week</span></h2>
+                    <button class="btn btn-primary mt-2">Book Now</button>
+                  </div>
+                </div>
+                <div class="row m-0 p-0  mt-4">
+                  <div class="col-md-4 col-xl-4 col-12">
+                    <img src="./images/castello.jpg" alt="playita" class="img-fluid h-100">
+                  </div>
+                  <div class="col-md-4 col-xl-4 col-12">
+                    <h5 class="mal">Thailand</h5>
+                    <h3>Phuket</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"><span class="review">(20 reviews)</span></i>
+                    <p class="mt-2 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="gr">Latest booking: Nov 3, 2017</p>
+                  </div>
+                  <div class="col-md-4 col-xl-4 col-12">
+                    <h5 class="time">from</h5>
+                    <h2 class="sat">$230<span class="time">/3 days 2 nights</span></h2>
+                    <button class="btn btn-primary mt-2">Book Now</button>
+                  </div>
+                </div>
+                <div class="row m-0 p-0  mt-4">
+                  <div class="col-md-4 col-xl-4 col-12">
+                    <img src="./images/main2.jpg" alt="playita" class="img-fluid h-100">
+                  </div>
+                  <div class="col-md-4 col-xl-4 col-12">
+                    <h5 class="mal">France</h5>
+                    <h3>Paris</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"><span class="review">(20 reviews)</span></i>
+                    <p class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="gr">Latest booking: Nov 3, 2017</p>
+                  </div>
+                  <div class="col-md-4 col-xl-4 col-12">
+                    <h5 class="time">from</h5>
+                    <h2 class="sat">$356<span class="time">/4 days 3 nights</span></h2>
+                    <button class="btn btn-primary mt-2">Book Now</button>
+                  </div>
+                </div>
+                <div class="row m-0 p-0  mt-4">
+                  <div class="col-md-4 col-xl-4 col-12">
+                    <img src="./images/roof.jpg" alt="playita" class="img-fluid h-100">
+                  </div>
+                  <div class="col-md-4 col-xl-4 col-12">
+                    <h5 class="mal">Japan</h5>
+                    <h3>Tokyo</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"><span class="review">(20 reviews)</span></i>
+                    <p class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="gr">Latest booking: Nov 3, 2017</p>
+                  </div>
+                  <div class="col-md-4 col-xl-4 col-12">
+                    <h5 class="time">from</h5>
+                    <h2 class="sat">$420<span class="time">/1 week</span></h2>
+                    <button class="btn btn-primary mt-2">Book Now</button>
+                  </div>
+                </div>
+                <div class="row m-0 p-0 mt-4">
+                  <div class="col-md-4 col-xl-4 col-12">
+                    <img src="./images/coloseo.jpg" alt="playita" class="img-fluid h-100">
+                  </div>
+                  <div class="col-md-4 col-xl-4 col-12">
+                    <h5 class="mal">Italy</h5>
+                    <h3>Naples</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"><span class="review">(20 reviews)</span></i>
+                    <p class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="gr">Latest booking: Nov 3, 2017</p>
+                  </div>
+                  <div class="col-md-4 col-xl-4 col-12">
+                    <h5 class="time">from</h5>
+                    <h2 class="sat">$550<span class="time">/1 week</span></h2>
+                    <button class="btn btn-primary mt-2">Book Now</button>
+                  </div>
+                </div>
+                <div class="row m-0 p-0 mt-5 d-flex justify-content-center">
+                  <div class="col-1">
+                    <h3>1</h3>
+                  </div>
+                  <div class="col-1">
+                    <h3 class="activo2">2</h3>
+                  </div>
+                  <div class="col-1">
+                    <h3>3</h3>
+                  </div>
+                  <div class="col-1">
+                    <h3>4</h3>
+                  </div>
+                  <div class="col-1 mt-1">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row m-0 p-0 mt-5 pt-5">
+          <div class="col-12">
+            <h1 class="text-center">YOU MAY <span class="sat2">Like</span></h1>
+          </div>
+          <div class="col-12 container pt-3 text-center">
+            <div class="row m-0 p-0">
+              <div class="col-4">
+                <img src="./images/Phuket.jpg" alt="playita" class="img-fluid">
+                <h5 class="mal">Malaysia</h5>
+                <h3>LANGKAWI</h3>
+                <h2 class="sat">$120<span class="time">/3 days</span></h2>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tempora dolores omnis culpa voluptas temporibus!</p>
+              </div>
+              <div class="col-4">
+                <img src="./images/Phuket.jpg" alt="playita" class="img-fluid">
+                <h5 class="mal">Philippines</h5>
+                <h3>MANILA</h3>
+                <h2 class="sat">$299<span class="time">/4 days</span></h2>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tempora dolores omnis culpa voluptas temporibus!</p>
+              </div>
+              <div class="col-4">
+                <img src="./images/Phuket.jpg" alt="playita" class="img-fluid">
+                <h5 class="mal">Indonesia</h5>
+                <h3>BALI</h3>
+                <h2 class="sat">$192<span class="time">/3 days</span></h2>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tempora dolores omnis culpa voluptas temporibus!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer>
+      <div class="row m-0 p-0">
+        <div class="col-6 col-md-2 m-0 p-0">
+          <img src="./images/castello.jpg" alt="cast1" class="img-fluid">
+        </div>
+        <div class="col-6 col-md-2 m-0 p-0">
+          <img src="./images/coloseo.jpg" alt="colo1" class="img-fluid">
+        </div>
+        <div class="col-6 col-md-2 m-0 p-0">
+          <img src="./images/imagen1.jpg" alt="img1" class="img-fluid">
+        </div>
+        <div class="col-6 col-md-2 m-0 p-0">
+          <img src="./images/castello.jpg" alt="cast2" class="img-fluid">
+        </div>
+        <div class="col-6 col-md-2 m-0 p-0">
+          <img src="./images/trevi.jpg" alt="trevi" class="img-fluid">
+        </div>
+        <div class="col-6 col-md-2 m-0 p-0">
+          <img src="./images/castello.jpg" alt="cast3" class="img-fluid">
+        </div>
+      </div>
+      <div id="insta" class="d-flex justify-content-center">
+        <button type="button" class="btn btn-outline-light" style="height: 50px;">
+          <i class="fab fa-instagram"></i>
+          <span style="font-size: 20px;">Instagram</span>
+        </button>
+      </div>
+      <div class="row m-0 p-0 text-center bg-dark">
+        <div class="col-md-2 offset-3 col-12 p-4">
+          <h3 class="text-center text-light">KEEP IN TOUCH</h3>
+        </div>
+        <div class="col-12 col-md-4 d-flex justify-content-center p-4">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Email address" aria-label="Email address" aria-describedby="button-addon2">
+            <button class="btn btn-outline-light" type="button" id="button-addon2">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div id="info" class="row m-0 p-0 text-center">
+        <div class="col-12 col-md-12 p-5">
+          <h2 class="chill" style="font-size: 80px;"><span id="C">C</span>hilling</h2>
+        </div>
+        <div class="col-12 col-md-12">
+          <p class="chill" style="font-size: 20px;">A silky refined minimalist travel website.<br>Beautiful places &
+            Beautiful holidays.</p>
+        </div>
+        <div class="col-12 col-md-12">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fab fa-google-plus-g"></i>
+        </div>
+        <div class="row text-center text-light p-5">
+          <div class="col-12 col-md-2">
+          </div>
+          <div class="col-12 col-md-2">
+            <i class="fa-solid fa-phone" style="font-size:30px;"></i>
+            <p>Booking line: 8 a.m - 22 p.m</p>
+            <h4>+44 3245321</h4>
+          </div>
+          <div class="col-12 col-md-2">
+            <i class="fa-solid fa-envelope" style="font-size:30px;"></i>
+            <p>Email support</p>
+            <h4>info@travel.com</h4>
+          </div>
+          <div class="col-12 col-md-2">
+            <i class="fa-brands fa-skype" style="font-size:30px; color: #00aff0;"></i>
+            <p>Support center</p>
+            <h4>Contact Skype</h4>
+          </div>
+          <div class="col-12 col-md-2">
+            <i class="fa-solid fa-question" style="font-size:30px;"></i>
+            <p>Keep in touch</p>
+            <h4>Send question</h4>
+          </div>
+          <div class="col-12 col-md-2">
+          </div>
+        </div>
+        <div style="width: 75%; margin: 0 auto; border-bottom: 2px solid #fff;"></div>
+        <div class="col-12 col-md-12 text-center text-light p-5">
+          <p class="copy">Copyright © 2023. Chilling made by <span style="color: #8E1F2F;">Ion</span></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="https://kit.fontawesome.com/822d927846.js" crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.js"></script>
+</body>
+</html>

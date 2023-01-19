@@ -1,0 +1,226 @@
+html {
+  margin: 0;
+  padding: 0;
+
+  body {
+
+    .container-fluid {
+
+      header {
+        background: url("./images/mount.jpg");
+        background-size: cover;
+        background-position: center;
+
+        .line {
+          border-bottom: 4px solid #fff;
+          height: 35%;
+          width: 75%;
+        }
+
+        .chill {
+          font-family: 'Satisfy', cursive;
+          color: #fff;
+          font-size: 4.35em;
+
+          .c {
+            color: #8E1F2F;
+          }
+        }
+
+        i {
+          color: #fff;
+          font-size: 1.5em;
+        }
+
+        .pHeader {
+          font-family: 'Open Sans', sans-serif;
+          color: #fff;
+          font-size: 1.5em;
+          margin: 0;
+
+          .spanHeader {
+            color: #8E1F2F;
+          }
+        }
+
+        .h2Header {
+          color: #fff;
+          font-size: 3em;
+          font-weight: 600;
+        }
+      }
+
+      main {
+        background-color: #fff;
+
+        .container-fluid {
+          margin: 0px;
+          padding: 5rem 7rem;
+
+          .inputer {
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            text-align: center;
+          }
+
+          .dater {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+          }
+
+          .activo {
+            position: relative;
+            z-index: 2;
+
+            &::before {
+              content: "";
+              width: 1.2rem;
+              height: 1.2rem;
+              border-radius: 50%;
+              background-color: lightcoral;
+              position: absolute;
+              top: 3px;
+              left: -5px;
+              z-index: -1;
+
+            }
+          }
+
+          .checker {
+            vertical-align: middle;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+          }
+
+          #searcher {
+            background-color: #8E1F2F;
+            width: 40%;
+            font-weight: 600;
+            font-size: 1.1em;
+            outline: #fff;
+          }
+
+          .review {
+            font-size: 16px;
+            font-family: 'Lore', serif;
+            margin-left: 10px;
+            color: grey;
+          }
+
+          .activo2 {
+            position: relative;
+            z-index: 2;
+
+            &::before {
+              content: "";
+              width: 2rem;
+              height: 2rem;
+              border-radius: 50%;
+              background-color: lightcoral;
+              position: absolute;
+              top: 3px;
+              left: -8px;
+              z-index: -1;
+
+            }
+          }
+
+          .lora {
+            font-family: 'Lora', serif;
+            font-weight: 600;
+          }
+
+          .fa-star {
+            color: #8E1F2F;
+          }
+
+          .sat {
+            font-family: 'Lora', serif;
+            font-weight: 500;
+            color: #8E1F2F
+          }
+
+          .time {
+            font-size: 14px;
+            color: #000;
+          }
+
+          .mal {
+            font-family: 'Lora', serif;
+            font-weight: 500;
+            color: #8E1F2F;
+            margin-top: 10px;
+          }
+
+          .sat2 {
+            font-family: 'Satisfy', cursive;
+            font-weight: 500;
+            color: #8E1F2F;
+          }
+
+          .gr {
+            color: grey;
+          }
+        }
+      }
+
+      footer {
+
+        .btn-outline-light:hover {
+          color: #000;
+          background-color: lightgray;
+          border-color: #f8f9fa;
+        }
+
+        #insta {
+          position: relative;
+          top: -110px;
+          height: 0px;
+        }
+
+        #info {
+          width: 100%;
+          height: 100%;
+          background: url("./images/footerbg.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        .chill {
+          font-family: 'Satisfy', cursive;
+          color: #fff;
+        }
+
+        i {
+          color: #fff;
+          font-size: 20px;
+          margin: 10px;
+          cursor: pointer;
+        }
+
+        #C {
+          color: #8E1F2F;
+        }
+
+        .fa-twitter {
+          color: #1da1f2;
+        }
+
+        .copy {
+          font-size: 22px;
+          font-weight: 400;
+        }
+
+        @media (max-width: 576px) {
+          #insta {
+            position: relative;
+            top: -292px;
+          }
+        }
+      }
+    }
+  }
+}
