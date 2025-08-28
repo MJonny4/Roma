@@ -1,77 +1,109 @@
+/* ========================================
+   GLOBAL STYLES & RESET
+   ======================================== */
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 html body {
     background-color: #fafafa;
-}
-
-html body footer .row {
-    --bs-gutter-x: 0rem;
-    --bs-gutter-y: 0;
+    margin: 0;
     display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(var(--bs-gutter-y) * -1);
-    margin-right: calc(var(--bs-gutter-x) * -0.5);
-    margin-left: calc(var(--bs-gutter-x) * -0.5);
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
 }
 
-html body footer .container-fluid {
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: auto;
-    margin-left: auto;
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
 }
 
-html body footer .btn-outline-light:hover {
-    color: #000;
-    background-color: lightgray;
-    border-color: #f8f9fa;
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
 }
 
-html body footer #insta {
-    position: relative;
-    top: -110px;
-    height: 0px;
+a:hover {
+    color: #535bf2;
 }
 
-html body footer #info {
-    width: 100%;
-    height: 100%;
-    background: url("/images/footerbg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-html body footer .chill {
-    font-family: 'Satisfy', cursive;
-    color: #fff;
-}
-
-html body footer i {
-    color: #fff;
-    font-size: 20px;
-    margin: 10px;
+/* ========================================
+   BUTTONS & FORMS
+   ======================================== */
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
     cursor: pointer;
+    transition: border-color 0.25s;
 }
 
-html body footer #C {
+button:hover {
+    border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+html body main .form-control {
+    border: 1px solid #8E1F2F;
+    border-radius: 10px;
+    background-color: #fff;
     color: #8E1F2F;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    width: 80%;
 }
 
-html body footer .fa-twitter {
-    color: #1da1f2;
+/* ========================================
+   APP LAYOUT & COMPONENTS
+   ======================================== */
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
 }
 
-html body footer .copy {
-    font-size: 22px;
-    font-weight: 400;
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
 }
 
-@media (max-width: 576px) {
-    html body footer #insta {
-        position: relative;
-        top: -292px;
-    }
+.logo.preact:hover {
+    filter: drop-shadow(0 0 2em #673ab8aa);
 }
 
+.card {
+    padding: 2em;
+}
+
+.read-the-docs {
+    color: #888;
+}
+
+/* ========================================
+   HEADER SECTION
+   ======================================== */
 html body header {
     width: 100%;
     height: 585px;
@@ -132,6 +164,9 @@ html body header .rotate {
     transform: rotate(270deg);
 }
 
+/* ========================================
+   MAIN CONTENT SECTIONS
+   ======================================== */
 html body main {
     background-color: #fafafa;
     height: 100%;
@@ -157,22 +192,7 @@ html body main span.below {
     left: -2.8em;
 }
 
-html body main #main2 {
-    background: url("/images/main2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 420px;
-    width: 100%;
-}
-
-html body main #main2 .vatican {
-    transform: rotate(90deg);
-    color: #fff;
-    padding-bottom: 140px;
-    font-weight: 500;
-}
-
+/* Main Section 1 */
 html body main #main1 {
     background-image: url('/images/main1.jpg');
     background-size: cover;
@@ -192,6 +212,24 @@ html body main #insideMain1 {
     padding: 0;
 }
 
+/* Main Section 2 */
+html body main #main2 {
+    background: url("/images/main2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 420px;
+    width: 100%;
+}
+
+html body main #main2 .vatican {
+    transform: rotate(90deg);
+    color: #fff;
+    padding-bottom: 140px;
+    font-weight: 500;
+}
+
+/* Form Styles */
 html body main .plan {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
@@ -207,17 +245,6 @@ html body main .trip {
     font-weight: 500;
     color: #f0bc42;
     text-align: end;
-}
-
-html body main .form-control {
-    border: 1px solid #8E1F2F;
-    border-radius: 10px;
-    background-color: #fff;
-    color: #8E1F2F;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    width: 80%;
 }
 
 html body main .where {
@@ -256,6 +283,11 @@ html body main .styless2 {
     width: 37%;
 }
 
+/* ========================================
+   BODY SECTIONS 2-7
+   ======================================== */
+
+/* Body Section 2 */
 html body #body2 {
     background-color: #fafafa;
     height: 28vh;
@@ -284,6 +316,7 @@ html body #body2 .rot2 {
     padding-right: 5.5rem;
 }
 
+/* Body Section 3 */
 html body #body3 {
     background: url("/images/main3.jpg");
     background-size: cover;
@@ -299,6 +332,7 @@ html body #body3 .rot-img {
     transform: rotate(180deg);
 }
 
+/* Body Section 4 */
 html body #body4 {
     height: 38vh;
     background-color: #fafafa;
@@ -352,6 +386,7 @@ html body #body4 .satDes {
     font-size: 0.9rem;
 }
 
+/* Body Section 5 */
 html body #body5 {
     height: 88vh;
     background: url("/images/sky.jpg");
@@ -441,6 +476,7 @@ html body #body5 .videoYT {
     z-index: 2000;
 }
 
+/* Body Section 6 */
 html body #body6 {
     height: 140vh;
     background: linear-gradient(rgba(255, 255, 255, 0), #FAFBFB), url("/images/lake.jpg");
@@ -480,6 +516,7 @@ html body #body6 .linea {
     z-index: -1;
 }
 
+/* Grid Images Section 6 */
 html body #body6 .div1 {
     width: 100%;
     height: 25vh;
@@ -555,6 +592,7 @@ html body #body6 .div214 {
     border-bottom: 8px solid #fff;
 }
 
+/* Body Section 7 */
 html body #body7 {
     height: 100%;
     background: url("/images/beach.jpg");
@@ -596,4 +634,95 @@ html body #body7 .img-norot {
     padding-top: 10rem !important;
     padding: 0px;
     margin: 0px;
+}
+
+/* ========================================
+   FOOTER SECTION
+   ======================================== */
+html body footer .row {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -0.5);
+    margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+
+html body footer .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+html body footer .btn-outline-light:hover {
+    color: #000;
+    background-color: lightgray;
+    border-color: #f8f9fa;
+}
+
+html body footer #insta {
+    position: relative;
+    top: -110px;
+    height: 0px;
+}
+
+html body footer #info {
+    width: 100%;
+    height: 100%;
+    background: url("/images/footerbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+html body footer .chill {
+    font-family: 'Satisfy', cursive;
+    color: #fff;
+}
+
+html body footer i {
+    color: #fff;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+html body footer #C {
+    color: #8E1F2F;
+}
+
+html body footer .fa-twitter {
+    color: #1da1f2;
+}
+
+html body footer .copy {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* ========================================
+   MEDIA QUERIES
+   ======================================== */
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+
+    a:hover {
+        color: #747bff;
+    }
+
+    button {
+        background-color: #f9f9f9;
+    }
+}
+
+@media (max-width: 576px) {
+    html body footer #insta {
+        position: relative;
+        top: -292px;
+    }
 }
