@@ -1,7 +1,31 @@
 import { defineConfig } from 'vite'
-import preact from '@preact/preset-vite'
+import react from '@vitejs/plugin-react-swc'
 
-// https://vite.dev/config/
 export default defineConfig({
-    plugins: [preact()],
+  plugins: [
+    react({
+      jsxImportSource: 'preact'
+    })
+  ],
+  resolve: {
+    alias: {
+      'react': 'preact/compat',
+      'react-dom': 'preact/compat'
+    }
+  },
+  server: {
+    port: 3000,
+    open: true
+  },
+  build: {
+    target: 'esnext',
+    minify: 'swc',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['preact']
+        }
+      }
+    }
+  }
 })
